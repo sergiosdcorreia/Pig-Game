@@ -2,7 +2,6 @@ var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
-
 document.querySelector('.btn-roll').addEventListener('click', function() {
     if(gamePlaying) {
         // Random number between 1 and 6
@@ -19,8 +18,6 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         nextPlayer();
         }
     }
-
-
 });
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
@@ -32,7 +29,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         document.querySelector('score-' + activePlayer).textContent = scores[activePlayer]
 
         // Check if player won the game
-        if (score[activePlayer] >= 100) {
+        if (score[activePlayer] >= 10) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
