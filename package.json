@@ -1,0 +1,23 @@
+{
+  "name": "piggame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiosdcorreia/Pig-Game.git"
+  },
+  "homepage": "https://sergiosdcorreia.github.io/Pig-Game",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiosdcorreia/Pig-Game/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
